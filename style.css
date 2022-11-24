@@ -1,0 +1,325 @@
+body, h1, h2, p, ul, img {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  all: unset;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+/* ヘッダー */
+
+.headerContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 40px;
+  padding: 20px 0;
+  position: absolute;
+  top: 0;
+}
+
+.headerLogo {
+  margin-left: 36px;
+}
+
+.headerLogo:hover {
+  opacity: .8;
+}
+
+.headerLogoImage {
+  height: 20px;
+}
+
+.sp-headerLogo {
+  display: none;
+  margin-left: 20px;
+}
+
+.sp-headerLogo:hover {
+  opacity: .8;
+}
+
+.sp-headerLogoImage {
+  height: 16px;
+}
+
+.headerMenu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+  align-items: center;
+}
+
+.headerMenu li {
+  margin-right: 42px;
+}
+
+.headerMenu li:hover {
+  opacity: .8;
+}
+
+.headerMenu li:last-child {
+  margin-right: 36px;
+}
+
+.headerMenu li span:first-child {
+  font-size: 13px;
+  font-weight: bold;
+}
+.headerMenu li span:last-child {
+  font-size: 10px;
+}
+
+.headerButton {
+  background: #f79214;
+  padding: 14px 20px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.sp-headerMenu {
+  display: none;
+  margin-right: 32px;
+  cursor: pointer;
+}
+
+/* セクション１ */
+
+.section1 {
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.sp-hero {
+  display: none;
+  width: 100%;
+}
+
+.firstView {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 100px 50px 30px;
+}
+
+.firstViewContents {
+  width: fit-content;
+  margin-bottom: 68px;
+}
+
+.firstViewTitle {
+  font-size: 36px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.firstViewImages {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.firstViewImages img + img {
+  margin-left: 12px;
+}
+
+.firstViewImages img:nth-child(2) {
+  width: 40%;
+}
+
+.firstViewButtons {
+  display: flex;
+}
+
+.firstViewButton1 {
+  background: #f79214;
+  color: #fff;
+  padding: 20px 50px;
+  border-radius: 40px;
+  margin-right: 16px;
+}
+
+.firstViewButton1:hover {
+  opacity: .8;
+}
+
+.firstViewButton2 {
+  border: 1px solid #e0e0e0;
+  padding: 20px 20px;
+  border-radius: 40px;
+}
+
+.firstViewButton2:hover {
+  opacity: .8;
+}
+
+.firstViewCaptions {
+  font-size: 12px;
+  color: #B7B7B8;
+}
+
+/* セクション２ */
+
+.section2 {
+  background: #f79214;
+  color: #fff;
+}
+
+.about {
+  max-width: 1050px;
+  display: flex;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.aboutVideo {
+  width: 50%;
+}
+
+.aboutPotepan {
+  margin: auto 0 auto 36px;
+}
+
+.aboutPotepan h2 {
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+.aboutPotepan a {
+  margin-top: 16px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.aboutPotepan a:hover {
+  opacity: .8;
+}
+
+.aboutPotepan img {
+  vertical-align: text-bottom;
+}
+
+/* レスポンシブ */
+
+@media (max-width: 1080px) {
+  .headerContainer {
+    background: #fff;
+    padding: 10px 0;
+    position: fixed;
+  }
+
+  .headerLogo {
+    padding-top: 10px;
+  }
+  
+  .headerMenu {
+    display: none;
+  }
+  
+  .sp-headerMenu {
+    display: block;
+  }
+
+  .section1 {
+    margin-top: 60px;
+  }
+  
+  .about {
+    flex-direction: column;
+    padding: 44px 0;
+    width: 68%;
+  }
+  
+  .aboutVideo {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  .aboutPotepan {
+    margin: 0;
+  }  
+}
+
+@media (max-width: 767px) {
+  .headerContainer {
+    padding: 5px 0;
+    align-items: center;
+  }
+  
+  .headerLogo {
+    display: none;
+  }
+  
+  .sp-headerLogo {
+    display: block;
+  }
+
+  .sp-headerMenu {
+    margin-right: 16px;
+  }
+
+  .section1 {
+    background-image: none;
+    margin-top: 50px;
+  }
+
+  .sp-hero {
+    display: block;
+  }
+
+  .firstView {
+    margin: -45vw auto 0;
+    padding: 0 20px 30px;
+  }
+  
+  .firstViewContents {
+    width: 100%;
+    margin: 0 auto 24px;
+  }
+  
+  .firstViewTitle {
+    font-size: 25px;
+  }
+  
+  .firstViewImages {
+    justify-content: space-between;
+  }
+
+  .firstViewImages img + img {
+    margin: 0;
+  }
+
+  .firstViewImages img:first-child {
+    width: 28%;
+  }
+
+  .firstViewImages img:last-child {
+    width: 28%;
+  }
+  
+  .firstViewButton1 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+  }
+  
+  .firstViewButton2 {
+    display: none;
+  }
+
+  .about {
+    padding: 24px 0;
+    width: 92%;
+  }
+  
+}
